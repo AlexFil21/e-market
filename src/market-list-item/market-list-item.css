@@ -1,0 +1,148 @@
+.market-list-items {
+    width: 100%;
+    margin: 0;
+}
+
+.market-list-items ul {
+    width: 100%;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.electronicItem {
+    position: relative;
+    display: inline-block;
+    max-width: 20%;
+    height: 30%;
+    border: 3px solid transparent;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 15px 30px;
+    margin: 30px 0 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in
+}
+
+.electronicItem img {
+    width: 150px;
+    height: 180px;
+}
+
+.electronicItem span {
+    font-size: 36px;
+    font-family: SegoeUI Semibold;
+    color: #ff7e00;
+}
+.electronicItem button {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background-color: #ff7e00;
+    color: azure;
+    font-size: 18px;
+    padding: 10px 23px;
+    border-radius: 10%;
+    cursor: pointer;
+    opacity: 0;
+    outline: none;
+}
+
+.electronicItem:hover {
+    z-index: 20;
+    box-shadow: 0px 0px 7px 5px rgba(0.25, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+@media all and (min-width: 960px) and (max-width: 1200px) {
+
+    .electronicItem {
+        padding: 10px 20px;
+        margin: 30px 0 0;
+        font-size: 18px;
+    }
+    
+    .electronicItem img {
+        width: 130px;
+        height: 150px;
+    }
+    
+    .electronicItem span {
+        font-size: 34px;
+    }
+    .electronicItem button {
+        font-size: 15px;
+        line-height: 1.2;
+        padding: 5px 18px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 960px) {
+    .electronicItem {
+        padding: 15px 25px;
+        margin: 30px 0 0;
+        font-size: 18px;
+    }
+    
+    .electronicItem img {
+        width: 90px;
+        height: 110px;
+    }
+    
+    .electronicItem span {
+        font-size: 25px;
+    }
+    .electronicItem button {
+        font-size: 12px;
+        line-height: 1.2;
+        padding: 5px 18px;
+    }
+}
+
+@media all and (min-width: 580px) and (max-width: 768px) {
+    .electronicItem {
+        padding: 7px 15px;
+        margin: 30px 0 0;
+        font-size: 15px;
+    }
+    
+    .electronicItem img {
+        width: 70px;
+        height: 80px;
+    }
+    
+    .electronicItem span {
+        font-size: 18px;
+    }
+    .electronicItem button {
+        font-size: 8px;
+        padding: 3px 10px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .electronicItem {
+        padding: 3px 2px;
+        margin: 30px 0 0;
+        font-size: 7px;
+    }
+    
+    .electronicItem img {
+        width: 35%;
+        height: 60%;
+        padding: 3px 0;
+    }
+    
+    .electronicItem span {
+        font-size: 10px;
+    }
+    .electronicItem button {
+        font-size: 3px;
+        padding: 2px 7px;
+    }
+
+}
